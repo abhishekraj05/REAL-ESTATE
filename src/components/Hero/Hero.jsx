@@ -3,7 +3,7 @@ import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion, spring } from "framer-motion";
-import homeimg from '../../../public/chatgpt 99 Vihar.png'
+import homeimg from "../../../public/chatgpt 99 Vihar.png";
 
 const Hero = () => {
   return (
@@ -21,13 +21,14 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              Find Your Dream   <br /> Property Perfectly  <br /> Matched  to Your <br /> Lifestyle.
+              Find Your Dream <br /> Property Perfectly <br /> Matched to Your{" "}
+              <br /> Lifestyle.
             </motion.h1>
           </div>
 
           <div className="flexColStart hero-des">
             <span className="secondaryText">
-             <h2>जो दिखेगा, वही मिलेगा </h2>
+              <h2>जो दिखेगा, वही मिलेगा </h2>
             </span>
             <span className="secondaryText">
               <h2>सिर्फ़ सही और असली प्रॉपर्टी।</h2>
@@ -70,13 +71,14 @@ const Hero = () => {
         {/* Right side */}
         <div className="flexCenter hero-right">
           <motion.div
-           initial={{ x: "2rem", opacity: 0 }}
-           animate={{ x: 0, opacity: 1 }}
-           transition={{
-            duration: 4,
-            type : "spring"
-           }}
-           className="image-container">
+            initial={{ x: "2rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 4,
+              type: "spring",
+            }}
+            className="image-container"
+          >
             {/* <img src="./hero-image.png" alt="Hero" /> */}
             <img src={homeimg} alt="Hero" />
           </motion.div>
