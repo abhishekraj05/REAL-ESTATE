@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../../public/99-Vihar-Logo.png";
+// import logo from "../../public/99-Vihar-Logo.png";
+import logo from "../assets/99-Vihar-Logo.png"
 
 const Footer = () => {
   return (

@@ -1,6 +1,8 @@
 import React from "react";
 import Hero from "../Hero/Hero";
 import About from "./About";
+import WhatsAppButton from "../icon/WhatsAppButton";
+import SiteVisit from "../icon/SiteVisit";
 
 const AboutPage = () => {
   return (
@@ -12,6 +14,8 @@ const AboutPage = () => {
         </div>
       </div>
       <About/>
+       <WhatsAppButton/>
+         <SiteVisit/>
     </>
   );
 };

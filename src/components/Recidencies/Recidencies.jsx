@@ -5,11 +5,17 @@ import "swiper/css";
 import "./Recidencies.css";
 
 // Import images
-import r1 from "../../../public/r1.png";
-import ekadashNagar from "../../../public/ekadashNagar.jpg";
-import r3 from "../../../public/r3.png";
-import besugray from "../../../public/besugray.jpg";
-import r2 from "../../../public/r2.png";
+// import r1 from "../../../public/r1.png";
+// import ekadashNagar from "../../../public/ekadashNagar.jpg";
+// import r3 from "../../../public/r3.png";
+// import besugray from "../../../public/besugray.jpg";
+// import r2 from "../../../public/r2.png";
+
+import r1 from "../../assets/r1.png";
+import ekadashNagar from "../../assets/ekadashNagar.jpg";
+import r3 from "../../assets/r3.png";
+import besugray from "../../assets/besugray.jpg";
+import r2 from "../../assets/r2.png";
 
 // Enable Autoplay
 SwiperCore.use([Autoplay]);
@@ -81,7 +87,7 @@ const Recidencies = () => {
         >
           {data.map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="property-card">
+              <div className="property-card top">
                 <img src={card.image} alt="property" className="property-img" />
 
                 <div className="property-details">

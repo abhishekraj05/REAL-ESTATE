@@ -1,5 +1,7 @@
 import React from "react";
-import value from '../../../public/value.png'
+// import value from '../../../public/value.png'
+
+import value from '../../assets/value.png'
 
 import {
   Accordion,

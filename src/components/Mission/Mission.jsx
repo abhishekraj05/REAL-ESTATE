@@ -1,5 +1,6 @@
 import React from "react";
-import misssion from '../../../public/misssion.webp';
+// import misssion from '../../../public/misssion.webp'; // public img
+import misssion from '../../assets/misssion.webp';
 
 import {
   Accordion,

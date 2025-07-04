@@ -1,7 +1,8 @@
 // WhatsAppButton.jsx
 import React from "react";
 import "./WhatsAppButton.css";
-import whatsAppimg from '../../../public/whatsapp.png'
+// import whatsAppimg from '../../../public/whatsapp.png' // public img
+import whatsAppimg from '../../assets/whatsapp.png'
 
 const WhatsAppButton = () => {
   return (

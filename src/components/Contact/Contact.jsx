@@ -3,7 +3,12 @@ import "./Contact.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { motion } from "framer-motion";
-import contact from "../../../public/contact.avif";
+
+// public img
+// import contact from "../../../public/contact.avif";
+
+// asserts img
+import contact from "../../assets/contact.avif";
 const Contact = () => {
   return (
     <motion.section

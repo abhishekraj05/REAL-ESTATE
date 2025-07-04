@@ -3,10 +3,16 @@ import RightProperty from "./RightProperty";
 import LeftProperty from "./LeftProperty";
 import Touch from "./Touch";
 import Head from "./Head";
-import firstProperty from '../../../public/firstProperty.jpg'
-import secondProperty from '../../../public/secondProperty.jpg'
-import thirdProperty from '../../../public/thirdProperty.jpg'
-import fourthProperty from '../../../public/fourthProperty.jpg'
+
+// import firstProperty from '../../../public/firstProperty.jpg'
+// import secondProperty from '../../../public/secondProperty.jpg'
+// import thirdProperty from '../../../public/thirdProperty.jpg'
+// import fourthProperty from '../../../public/fourthProperty.jpg'
+
+import firstProperty from '../../assets/firstProperty.jpg'
+import secondProperty from '../../assets/secondProperty.jpg'
+import thirdProperty from '../../assets/thirdProperty.jpg'
+import fourthProperty from '../../assets/fourthProperty.jpg'
 
 
 const Property = () => {

@@ -40,7 +40,6 @@ const newsItems = [
   }
 ];
 
-
 const ResentNews = () => {
   return (
     <div className="scroll-wrapper">

@@ -1,6 +1,8 @@
 import React from "react";
 import "./SiteVisit.css";
-import site_visit from '../../../public/site_visit.png'
+// import site_visit from '../../../public/site_visit.png' // public img
+
+import site_visit from '../../assets/site_visit.png'
 
 const SiteVisit = () => {
   return (

@@ -8,6 +8,10 @@
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
+
+  /* ✅ Top and bottom spacing */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Fixed header */
@@ -22,8 +26,6 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -35,8 +37,8 @@
   width: 100%;
   animation-play-state: running;
 }
+
 .scroll-wrapper:hover .scroll-track {
-  /* 👇 This will pause the scroll when user hovers */
   animation-play-state: paused;
 }
 
@@ -81,6 +83,8 @@ hr {
   .scroll-wrapper {
     max-width: 100%;
     height: 250px;
+    margin-top: 1rem;       /* ✅ Mobile spacing */
+    margin-bottom: 1rem;
   }
 
   .scroll-heading {

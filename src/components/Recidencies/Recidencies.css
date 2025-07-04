@@ -12,6 +12,9 @@
   border: 1px solid #ddd;
 }
 
+.top {
+  margin-top: 10px;
+}
 .property-card:hover {
   transform: translateY(-5px);
 }
