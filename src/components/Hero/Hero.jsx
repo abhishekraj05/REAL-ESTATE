@@ -3,7 +3,7 @@ import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion, spring } from "framer-motion";
-import homeimg from "../../../public/chatgpt 99 Vihar.png";
+import homeimg from "../../../public/hero.jpg";
 
 const Hero = () => {
   return (

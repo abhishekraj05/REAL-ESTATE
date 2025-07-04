@@ -1,0 +1,48 @@
+.site-visit-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: shake 1s infinite ease-in-out;  /* 👈 Auto animation */
+}
+
+.site-visit-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 🎯 Animation Keyframes (shake + rotate effect) */
+@keyframes shake {
+  0%   { transform: translate(0, 0) rotate(0); }
+  20%  { transform: translate(-2px, 0) rotate(-2deg); }
+  40%  { transform: translate(2px, 0) rotate(2deg); }
+  60%  { transform: translate(-1px, 0) rotate(-1deg); }
+  80%  { transform: translate(1px, 0) rotate(1deg); }
+  100% { transform: translate(0, 0) rotate(0); }
+}
+
+/* ✅ Responsive for tablets */
+@media (max-width: 768px) {
+  .site-visit-button {
+    width: 65px;
+    height: 65px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+/* ✅ Responsive for mobile */
+@media (max-width: 480px) {
+  .site-visit-button {
+    width: 60px;
+    height: 60px;
+    bottom: 14px;
+    right: 12px;
+  }
+}

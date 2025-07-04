@@ -64,13 +64,13 @@ const Recidencies = () => {
     <section className="r-wraper">
       <div className="paddings innerWidth r-container">
         <div className="r-head flexColStart">
-          <span className="orangeText">Best Choice</span>
-          <span className="primaryText">Popular Recidencies</span>
+          <span className="orangeText r-head">Best Choice</span>
+          <span className="primaryText r-head">Popular Recidencies</span>
         </div>
 
         <Swiper
           loop={true}
-          speed={2000}
+          speed={4000}
           autoplay={{
             delay: 1,
             disableOnInteraction: false,
@@ -79,17 +79,30 @@ const Recidencies = () => {
           slidesPerView={1}
           spaceBetween={30}
         >
-          <SliderButtons />
           {data.map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="flexColStart r-card">
-                <img src={card.image} alt="property" />
-                <span className="secondaryText r-price">
-                  <span style={{ color: "orange" }}>₹ </span>
-                  {card.price}
-                </span>
-                <span className="primaryText">{card.name}</span>
-                <span className="secondaryText">{card.detail}</span>
+              <div className="property-card">
+                <img src={card.image} alt="property" className="property-img" />
+
+                <div className="property-details">
+                  <div className="property-title">
+                    <span role="img" aria-label="home">
+                      🏠
+                    </span>
+                    &nbsp;
+                    <b>{card.name}</b>
+                  </div>
+                  <div className="property-price">
+                    <strong>Price:</strong> <span style={{color: "#ffa500" }}> &nbsp; ₹ {card.price}</span>
+                  </div>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScyDM8IQqk1v6BoqE3QzGNT6DMAaG0JmTpWnVDYTOT8Jct4fg/viewform?usp=header"
+                  className="enquire-button"
+                >
+                  Enquire Now <span style={{ fontWeight: "bold" }}>⬇️</span>
+                </a>
               </div>
             </SwiperSlide>
           ))}
@@ -100,17 +113,3 @@ const Recidencies = () => {
 };
 
 export default Recidencies;
-
-const SliderButtons = () => {
-  const swiper = useSwiper();
-  return (
-    <div className="flexCenter r-button">
-      <button className="b1" onClick={() => swiper.slidePrev()}>
-        &lt;
-      </button>
-      <button className="b2" onClick={() => swiper.slideNext()}>
-        &gt;
-      </button>
-    </div>
-  );
-};

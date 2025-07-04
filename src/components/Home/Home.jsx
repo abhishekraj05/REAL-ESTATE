@@ -6,6 +6,9 @@ import GetStarted from "../GetStarted/GetStarted";
 import Contact from "../Contact/Contact";
 import "./Home.css";
 import Mission from "../Mission/Mission";
+import ResentNews from "../ResentNews/ResentNews";
+import WhatsAppButton from "../icon/WhatsAppButton";
+import SiteVisit from "../icon/SiteVisit";
 
 const Home = () => {
   return (
@@ -16,7 +19,10 @@ const Home = () => {
           <Hero />
         </div>
       </div>
+      <WhatsAppButton />
+      <SiteVisit />
       <Recidencies />
+      <ResentNews />
       <Value />
       <Contact />
       {/* <GetStarted /> video ka hai */}

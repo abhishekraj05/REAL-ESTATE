@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../public/99-Vihar-Logo.png";
 
 const Footer = () => {
   return (
@@ -26,7 +27,7 @@ const Footer = () => {
           {/* Logo & Quote */}
           <div className="col-12 col-md-4 text-center text-md-start">
             <img
-              src="./99-Vihar-Logo.png"
+              src={logo}
               alt="99 Vihar Logo"
               style={{ width: "120px" }}
               className="mb-3"

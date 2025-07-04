@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../public/99-Vihar-Logo.png";
 
 function Navbar() {
   const location = useLocation();
@@ -31,7 +32,7 @@ function Navbar() {
           className="navbar-brand d-flex align-items-center text-white"
           to="/"
         >
-          <img src="./99-Vihar-Logo.png" alt="logo" width={65} />
+          <img src={logo} alt="logo" width={65} />
           <div className="ms-2">
             <h5 className="mb-0 fw-bold">99 VIHAR</h5>
             <small className="fw-semibold" style={{ fontSize: "0.65rem" }}>
