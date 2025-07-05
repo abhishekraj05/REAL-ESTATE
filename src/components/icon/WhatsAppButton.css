@@ -28,9 +28,9 @@
 /* 📱 Responsive for smaller screens */
 @media (max-width: 480px) {
   .whatsapp-button {
-    width: 70px;
-    height: 70px;
-    bottom: 80px;  /* stays above smaller SiteVisit */
-    right: 1px;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;  /* stays above smaller SiteVisit */
+    right: 15px;
   }
 }

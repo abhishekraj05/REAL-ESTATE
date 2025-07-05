@@ -40,8 +40,8 @@
 /* ✅ Responsive for mobile */
 @media (max-width: 480px) {
   .site-visit-button {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     bottom: 14px;
     right: 12px;
   }
