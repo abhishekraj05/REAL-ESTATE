@@ -93,6 +93,10 @@
 .links-heading {
   font-size: 1.1rem;
   font-weight: bold;
+ 
+}
+.topc{
+   margin-top: 2.5rem;
 }
 
 .links-list {
@@ -276,10 +280,108 @@
     width: 70px;
     height: 70px;
   }
+  .topc{
+   margin-top: -4rem;
+}
+.leftc{
+  margin-left: 36%;
+}
 }
 
 @media (min-width: 769px) {
   .about-right {
     text-align: left;
   }
+}
+/* ✅ Section entry animation: Fade + Slide Up */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-wrapper {
+  animation: fadeSlideUp 0.8s ease-out both;
+  will-change: opacity, transform;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.about-logo {
+  animation: zoomIn 0.8s ease-out both;
+}
+/* ✅ Section Fade + Slide Up Animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-wrapper {
+  animation: fadeSlideUp 0.8s ease-out both;
+  will-change: opacity, transform;
+}
+
+/* ✅ Image Zoom-in on Load */
+@keyframes zoomInImage {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.about-logo {
+  animation: zoomInImage 0.8s ease-out both;
+  will-change: transform, opacity;
+}
+
+/* ✅ Text Fade-in */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-text {
+  animation: fadeInText 1s ease-out both;
+  will-change: opacity, transform;
+}
+
+/* ✅ Optional: Text zoom effect on hover */
+.about-text:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ Optional: Decorative image zoom on hover (already in your CSS) */
+.decor-image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }

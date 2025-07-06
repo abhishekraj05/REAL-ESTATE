@@ -21,10 +21,10 @@ const About = () => {
 
         {/* Right Side – Tabs */}
         <div className="about-right">
-          <h3 className="links-heading mt-5">
+          <h3 className="links-heading topc">
             MORE <span className="highlight">LINKS</span>
           </h3>
-          <hr className="blue-line" />
+          <hr className="blue-line  leftc" />
           <ul className="links-list">
             <li onClick={() => setActiveTab("about")} className={activeTab === "about" ? "active-link" : ""}>ABOUT US</li>
             <li onClick={() => setActiveTab("story")} className={activeTab === "story" ? "active-link" : ""}>SUCCESS STORY</li>
