@@ -98,6 +98,17 @@
   display: block;
 }
 
+ .hero-des {
+    text-align: start;
+    font-size: 2rem; 
+    line-height: 2rem; 
+  }
+
+  .hero-des h2 {
+    font-size: 1.5rem; 
+    margin: 0.4rem 0; 
+  }
+
 /* Responsive */
 @media (max-width: 640px) {
   .hero-container {
@@ -135,5 +146,18 @@
 
   .paddings {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-des {
+    text-align: start;
+    font-size: 2rem; 
+    line-height: 2rem; 
+  }
+
+  .hero-des h2 {
+    font-size: 1.5rem; 
+    margin: 0.4rem 0; 
   }
 }

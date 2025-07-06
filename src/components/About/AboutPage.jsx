@@ -7,12 +7,12 @@ import SiteVisit from "../icon/SiteVisit";
 const AboutPage = () => {
   return (
     <>
-      <div className="Home">
+      {/* <div className="Home">
         <div>
           <div className="white-grediant" />
           <Hero />
         </div>
-      </div>
+      </div> */}
       <About/>
        <WhatsAppButton/>
          <SiteVisit/>

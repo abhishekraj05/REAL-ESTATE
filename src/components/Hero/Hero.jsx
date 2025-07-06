@@ -4,7 +4,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 // import homeimg from "../../../public/hero.jpg";  // public
-import homeimg from "../../assets/hero.jpg"
+import homeimg from "../../assets/hero.jpg";
 
 const Hero = () => {
   return (
@@ -22,7 +22,8 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              Find Your Dream <br /> Property Perfectly <br /> Matched to Your <br /> Lifestyle.
+              Find Your Dream <br /> Property Perfectly <br /> Matched to Your{" "}
+              <br /> Lifestyle.
             </motion.h1>
           </div>
 
