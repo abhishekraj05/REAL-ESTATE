@@ -21,9 +21,9 @@ const TitleNavbar = ({ tab }) => {
     >
       <div className="overlay"></div>
       <div className="text-center position-relative z-1 p-3">
-        <h3 className="text-uppercase">99 VIHAR</h3>
+        <h3 className="text-uppercase orangeText">99 VIHAR</h3>
         <h2 className="fw-bold text-uppercase m-0">{titles[tab]}</h2>
-        <div className="underline mx-auto mt-2"></div>
+        <div className=" border-bottom border-warning mx-auto mt-2"></div>
       </div>
     </div>
   );

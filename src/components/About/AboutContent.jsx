@@ -38,7 +38,7 @@ const AboutContent = ({ tab }) => {
           <div className="about-main-container">
             <div className="about-left">
               <h3 className="links-heading">
-                About Us of <span className="highlight">99VIHAR</span>
+                About Us of <span style={{color:"orange"}}>99VIHAR</span>
               </h3>
               <hr className="blue-line" />
               <div className="about-row">

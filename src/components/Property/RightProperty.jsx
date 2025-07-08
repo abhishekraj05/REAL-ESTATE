@@ -1,19 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./LeftProperty.css"; // ✅ Same CSS for both
 
 const RightProperty = ({ imageurl, RightHeading, content }) => {
   return (
-    <div className="container my-5">
+    <div className="lp-card container my-5">
       <div className="row align-items-center">
         {/* Text Section */}
         <motion.div
           className="col-12 col-md-6 order-2 order-md-1 p-4 text-center text-md-start"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         >
-          <h1 className="orangeText mb-3">{RightHeading}</h1>
-          <p>{content}</p>
+          <h1 className="lp-heading text-warning  mb-3">{RightHeading}</h1>
+          <div className="lp-text">{content}</div>
         </motion.div>
 
         {/* Image Section */}
@@ -24,7 +25,7 @@ const RightProperty = ({ imageurl, RightHeading, content }) => {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         >
           <div className="image-container">
-            <img src={imageurl} alt="images" />
+            <img src={imageurl} alt="images" className="img-fluid" />
           </div>
         </motion.div>
       </div>

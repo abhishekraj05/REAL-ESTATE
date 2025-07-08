@@ -17,7 +17,7 @@ const Touch = () => {
         transition={{ duration: 0.6 }}
       >
         <h2 className="fw-bold mb-3 display-5">
-          Get in <span className="text-primary">Touch</span>
+          Get in <span className="text-warning">Touch</span>
         </h2>
         <p className="lead text-muted mb-4">
           Limited plots available — don’t miss out, contact us now!

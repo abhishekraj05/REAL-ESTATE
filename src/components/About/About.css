@@ -46,7 +46,7 @@
 .blue-line {
   width: 60px;
   height: 2px;
-  background-color: #2980b9;
+  background-color: orange;
   border: none;
   margin: 0.5rem 0 1rem;
 }
@@ -65,7 +65,7 @@
 }
 
 .links-list li a:hover {
-  color: #0a64ff;
+  color: orange;
   font-weight: 600;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .links-list li:hover {
-  color: #2980b9;
+  color: orange;
 }
 
 .title-navbar {

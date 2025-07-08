@@ -80,19 +80,6 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div className="col-12 col-md-2 text-center text-md-start">
-            <h6 className="fw-bold mb-3">Quick Links</h6>
-            {["Home", "About", "Property", "Pricing"].map((link, i) => (
-              <p key={i} style={{ marginBottom: "8px" }}>
-                <a href="/" style={{ color: "#ccc", textDecoration: "none" }}>
-                  {link}
-                </a>
-              </p>
-            ))}
-          </div>
-
           {/* Contact Info */}
           <div className="col-12 col-md-3 text-center text-md-start">
             <h6 className="fw-bold mb-3">Contact Us</h6>

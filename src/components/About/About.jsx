@@ -22,7 +22,7 @@ const About = () => {
         {/* Right Side – Tabs */}
         <div className="about-right">
           <h3 className="links-heading topc">
-            MORE <span className="highlight">LINKS</span>
+            MORE <span style={{color:"orange"}}>LINKS</span>
           </h3>
           <hr className="blue-line  leftc" />
           <ul className="links-list">

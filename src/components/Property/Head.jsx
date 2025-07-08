@@ -14,7 +14,7 @@ const Head = () => {
       className="hero  bg-dark text-white text-center py-5 px-3"
       {...fadeUp}
     >
-      <h1 className="display-4" style={{color: "orange"}}>99 Vihar – Residential Plots</h1>
+      <h1 className="display-4 text-warning" >99 Vihar Residential Plots</h1>
       <p className="lead">Find your ideal plot across Samastipur & beyond</p>
     </motion.section>
   );
