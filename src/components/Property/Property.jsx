@@ -1,6 +1,7 @@
 import React from "react";
 import RightProperty from "./RightProperty";
 import LeftProperty from "./LeftProperty";
+import { TbListDetails } from "react-icons/tb";
 import Touch from "./Touch";
 import Head from "./Head";
 
@@ -31,14 +32,14 @@ const Property = () => {
             <ul
               style={{
                 textAlign: "left",
-                listStyleType: "disc",
+                listStyleType: "none",
                 paddingLeft: "1.2rem",
               }}
             >
-              <li>16-feet wide internal roads for easy access</li>
-              <li>Gated boundary with 24x7 security</li>
-              <li>Registry available with immediate possession</li>
-              <li>Located close to Samastipur city center</li>
+              <li><TbListDetails className="text-warning"/> 16-feet wide internal roads for easy access</li>
+              <li><TbListDetails className="text-warning"/> Gated boundary with 24x7 security</li>
+              <li><TbListDetails className="text-warning"/> Registry available with immediate possession</li>
+              <li><TbListDetails className="text-warning"/> Located close to Samastipur city center</li>
             </ul>
           </>
         }
@@ -54,14 +55,14 @@ const Property = () => {
             <ul
               style={{
                 textAlign: "left",
-                listStyleType: "disc",
+                listStyleType: "none",
                 paddingLeft: "1.2rem",
               }}
             >
-              <li> 17 & 19-feet wide roads</li>
-              <li> Electricity and water connection</li>
-              <li> Close to schools, hospitals, and markets</li>
-              <li> Registry-ready plots</li>
+              <li> <TbListDetails className="text-warning" /> 17 & 19-feet wide roads</li>
+              <li> <TbListDetails className="text-warning" /> Electricity and water connection</li>
+              <li> <TbListDetails className="text-warning" /> Close to schools, hospitals, and markets</li>
+              <li> <TbListDetails className="text-warning" /> Registry-ready plots</li>
             </ul>
           </>
         }
@@ -80,13 +81,13 @@ const Property = () => {
             <ul
               style={{
                 textAlign: "left",
-                listStyleType: "disc",
+                listStyleType: "none",
                 paddingLeft: "1.2rem",
               }}
             >
-              <li> Wide internal roads</li>
-              <li> Green spaces and open parks</li>
-              <li> Ready for registry and construction</li>
+              <li><TbListDetails className="text-warning" /> Wide internal roads</li>
+              <li> <TbListDetails className="text-warning" /> Green spaces and open parks</li>
+              <li> <TbListDetails className="text-warning"/> Ready for registry and construction</li>
             </ul>
           </>
         }
@@ -105,14 +106,14 @@ const Property = () => {
             <ul
               style={{
                 textAlign: "left",
-                listStyleType: "disc",
+                listStyleType: "none",
                 paddingLeft: "1.2rem",
               }}
             >
-             <li>Wide roads</li>
-             <li> Gated boundary and secure community</li>
-             <li> All basic facilities — electricity & water</li>
-             <li>Registry-ready plots</li>
+             <li><TbListDetails className="text-warning"/> Wide roads</li>
+             <li> <TbListDetails className="text-warning"/> Gated boundary and secure community</li>
+             <li> <TbListDetails className="text-warning"/> All basic facilities — electricity & water</li>
+             <li><TbListDetails className="text-warning"/> Registry-ready plots</li>
             </ul>
           </>
         }

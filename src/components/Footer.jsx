@@ -13,16 +13,6 @@ const Footer = () => {
         overflow: "hidden",
       }}
     >
-      {/* Gradient separator */}
-      <div
-        style={{
-          height: "3px",
-          width: "120px",
-          background: "linear-gradient(to right, #ff9933, #ffcc66)",
-          margin: "0 auto 40px auto",
-        }}
-      />
-
       <div className="container">
         <div className="row gy-4">
           {/* Logo & Quote */}
@@ -80,6 +70,19 @@ const Footer = () => {
               ))}
             </div>
           </div>
+
+          {/* Quick Links */}
+          <div className="col-12 col-md-2 text-center text-md-start">
+            <h6 className="fw-bold mb-3">Quick Links</h6>
+            {["Home", "About", "Property", "Pricing"].map((link, i) => (
+              <p key={i} style={{ marginBottom: "8px" }}>
+                <a href="/" style={{ color: "#ccc", textDecoration: "none" }}>
+                  {link}
+                </a>
+              </p>
+            ))}
+          </div>
+
           {/* Contact Info */}
           <div className="col-12 col-md-3 text-center text-md-start">
             <h6 className="fw-bold mb-3">Contact Us</h6>
