@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import "./NavContact.css";
 
 const NavContact = () => {
   const fadeUp = {
@@ -40,10 +41,11 @@ const NavContact = () => {
             }}
           />
           <p className="text-muted mb-4">
-            हमसे संपर्क करें! चाहे आप अपना सपनों का घर खरीदना चाहते हों, साइट विज़िट
-            बुक करनी हो, या किसी भी प्रकार की जानकारी लेनी हो — हमारी टीम आपकी
-            मदद के लिए हमेशा तैयार है। आप हमें कॉल, ईमेल या नीचे दिए गए फॉर्म के
-            ज़रिए संपर्क कर सकते हैं। हम जल्द से जल्द आपसे संपर्क करेंगे।
+            हमसे संपर्क करें! चाहे आप अपना सपनों का घर खरीदना चाहते हों, साइट
+            विज़िट बुक करनी हो, या किसी भी प्रकार की जानकारी लेनी हो — हमारी टीम
+            आपकी मदद के लिए हमेशा तैयार है। आप हमें कॉल, ईमेल या नीचे दिए गए
+            फॉर्म के ज़रिए संपर्क कर सकते हैं। हम जल्द से जल्द आपसे संपर्क
+            करेंगे।
           </p>
 
           <div className="d-flex align-items-start gap-3 mb-4 text-muted">
@@ -66,6 +68,16 @@ const NavContact = () => {
           <div className="d-flex align-items-center gap-3 mb-2 text-muted">
             <FaEnvelope size={18} style={{ color: "#f4a259" }} />
             <p className="mb-0 fw-medium">info@99vihar.in</p>
+          </div>
+          <div className=" d-flex align-items-center gap-3 mb-2 text-muted ">
+            <i
+              style={{ color: "#f4a259" }}
+              className="fa-solid fa-location-dot"
+            ></i>
+            <a href="https://maps.app.goo.gl/KRrJE3eGv8yvEDBD8" className="map" style={{ textDecoration: "none" }}>
+              View on Map .
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
         </motion.div>
 
