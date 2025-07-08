@@ -3,32 +3,27 @@
   position: relative;
   padding-bottom: 2rem;
 }
-
 .hero-container {
   justify-content: space-around;
   align-items: flex-end;
-  display: flex;
-  flex-wrap: wrap;
 }
-
+.hero-des{
+  font-weight: 600;
+  
+}
+/* left side  */
 .hero-left {
-  display: flex;
-  flex-direction: column;
   gap: 3rem;
-  flex: 1;
 }
-
 .hero-title {
   position: relative;
   z-index: 1;
 }
-
 .hero-title > h1 {
   font-weight: 600;
-  font-size: clamp(2rem, 6vw, 3.8rem);
-  line-height: 1.2;
+  font-size: 3.8rem;
+  line-height: 4rem;
 }
-
 .orange-circle {
   height: 4rem;
   width: 4rem;
@@ -39,125 +34,78 @@
   top: -7%;
   z-index: -1;
 }
-
-.hero-des {
-  font-weight: 600;
-}
-
 .search-bar {
+  /* background-color: white; */
+  /* border-radius: 5px;
+  border: 3px solid rgba(120, 120, 120, 0.374); */
   padding: 0.5rem 1rem;
   justify-content: space-between;
   width: 100%;
-  display: flex;
-  gap: 0.5rem;
 }
-
 .search-bar > input {
   border: none;
   outline: none;
-  flex: 1;
 }
-
 .stats {
   width: 100%;
   justify-content: space-between;
   font-weight: 600;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
-
 .stat > :nth-child(1) {
   font-size: 2rem;
 }
-
 .stat > :nth-child(1) > :last-child {
   color: orange;
 }
 
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* right side */
 
 .image-container {
   width: 30rem;
   height: 35rem;
   overflow: hidden;
   border-radius: 15rem 15rem 0 0;
-  border: 8px solid rgba(255, 255, 255, 0.12);
+  border: 8px solid rgba(255, 255, 255, 0.12); /* Fully opaque white */
 }
 
 .image-container > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
 }
 
- .hero-des {
-    text-align: start;
-    font-size: 2rem; 
-    line-height: 2rem; 
-  }
 
-  .hero-des h2 {
-    font-size: 1.5rem; 
-    margin: 0.4rem 0; 
-  }
 
-/* Responsive */
+
 @media (max-width: 640px) {
   .hero-container {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+    margin-top: 2rem;
   }
-
   .hero-title > h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 3rem;
-    text-align: start;
   }
-
-  .hero-des {
-    text-align: center;
-  }
-
   .image-container {
     width: 95%;
     height: 25rem;
   }
-
   .stats {
     justify-content: center;
+    gap: 1.5rem;
   }
-
+  .hero-right {
+    width: 100%;
+  }
   .stat > :nth-child(1) {
     font-size: 1.5rem;
   }
-
   .stat > :nth-child(2) {
     font-size: 0.8rem;
-  }
-
-  .paddings {
-    padding: 1rem;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-des {
-    text-align: start;
-    font-size: 2rem; 
-    line-height: 2rem; 
-  }
-
-  .hero-des h2 {
-    font-size: 1.5rem; 
-    margin: 0.4rem 0; 
+  .paddings {
+    padding: 0rem !important;
+    margin: 0;
   }
 }
