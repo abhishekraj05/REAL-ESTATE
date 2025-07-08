@@ -31,6 +31,7 @@ const About = () => {
             <li onClick={() => setActiveTab("vision")} className={activeTab === "vision" ? "active-link" : ""}>VISION & MISSION</li>
             <li onClick={() => setActiveTab("chairman")} className={activeTab === "chairman" ? "active-link" : ""}>CHAIRMAN'S MESSAGE</li>
             <li onClick={() => setActiveTab("quality")} className={activeTab === "quality" ? "active-link" : ""}>QUALITY POLICY</li>
+            <li onClick={() => setActiveTab("video")} className={activeTab === "quality" ? "active-link" : ""}>video</li>
           </ul>
         </div>
       </div>

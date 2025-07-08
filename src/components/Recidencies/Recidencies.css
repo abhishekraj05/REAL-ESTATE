@@ -1,55 +1,84 @@
+/* Main Card Area */
 .property-card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
   overflow: hidden;
-  width: 100%;
-  max-width: 350px;
-  margin: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
+  max-width: 320px;
+  height: 100%;
+  margin: auto;
 }
 
-.top {
-  margin-top: 10px;
-}
 .property-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
 }
 
 .property-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
 }
 
 .property-details {
   padding: 1rem;
-  background-color: #f6f6f6;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 120px;
 }
 
 .property-title {
-  font-size: 1.05rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .property-price {
   font-size: 1rem;
-  color: #222;
-  font-weight: 500;
-  margin-top: 5px;
 }
 
-.r-head {
-  align-items: center;
+.enquire-button {
+  background: #ffa500;
+  color: white;
+  padding: 0.6rem;
   text-align: center;
+  font-weight: 500;
+  border-radius: 0 0 12px 12px;
 }
+
+/* Detail Page */
+.property-details-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.back-button {
+  padding: 0.6rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Swiper container padding (optional) */
+.r-container .swiper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
 
 /* Enquire Now Button */
 .enquire-button {
@@ -66,30 +95,4 @@
 
 .enquire-button:hover { 
   background-color: var(--black);
-}
-
-/* Responsive Swiper Slide Centering */
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .property-card {
-    max-width: 90%;
-  }
-
-  .property-img {
-    height: 180px;
-  }
-
-  .property-title,
-  .property-price {
-    font-size: 1rem;
-  }
-
-  .enquire-button {
-    font-size: 0.95rem;
-  }
 }

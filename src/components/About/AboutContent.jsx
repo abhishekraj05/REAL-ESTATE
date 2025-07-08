@@ -136,6 +136,17 @@ Quality is not just what we deliver — it’s what we live by.`,
         true
       );
 
+      case "video":
+        return(
+          <div className="responsive-video mt-1">
+          <iframe
+            src="https://www.youtube.com/embed/Bnarj44Gc8Q?autoplay=1&mute=1&loop=1&playlist=Bnarj44Gc8Q"
+            title="99Vihar Showcase"
+            allow="autoplay; encrypted-media "
+            allowFullScreen
+          ></iframe>
+        </div>
+        );
     default:
       return null;
   }
