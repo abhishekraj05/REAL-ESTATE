@@ -47,9 +47,9 @@ const Value = () => {
         >
           <span className="orangeText centerText">Our Value</span>
           <span className="primaryText centerText">Value We Give to You</span>
-          <span className="secondaryText centerText">
-            We’re always ready to help by providing the best services for you. <br />
-            We believe a good place to live can make your life better.
+          <span style={{textAlign: "center"}} className="secondaryText centerText">
+            We’re always ready to help by providing <br /> the best services for you. <br />
+            We believe a good place to live <br /> can make your life better.
           </span>
 
           <Accordion

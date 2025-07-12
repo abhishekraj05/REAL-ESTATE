@@ -68,9 +68,9 @@ const Mission = () => {
         >
           <span className="orangeText centerText">Our Mission</span>
           <span className="primaryText centerText">What Drives Us</span>
-          <span className="secondaryText centerText">
-            Our mission is to make real estate more accessible, transparent, and trustworthy. <br />
-            We're here to empower people with the best housing choices.
+          <span style={{textAlign: "center"}} className="secondaryText centerText">
+            Our mission is to make real estate more <br /> accessible transparent, and trustworthy. <br />
+            We're here to empower people <br /> with the best housing choices.
           </span>
 
           <Accordion
