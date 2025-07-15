@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -9,17 +9,16 @@ import NavContactPage from "./components/NavContact/NavContactPage";
 
 function App() {
   return (
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* Uncomment and add these as needed */}
-            <Route path="/AboutPage" element={<AboutPage />} />
-            <Route path="/PropertyPage" element={<PropertyPage />} />
-            <Route path="/NavContactPage" element={<NavContactPage />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
+    <HashRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/PropertyPage" element={<PropertyPage />} />
+        <Route path="/NavContactPage" element={<NavContactPage />} />
+      </Routes>
+      <Footer />
+    </HashRouter>
   );
 }
 
