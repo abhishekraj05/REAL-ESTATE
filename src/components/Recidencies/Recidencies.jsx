@@ -89,8 +89,8 @@ const Recidencies = () => {
     <section className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="r-head flexColStart">
-          <span style={{marginLeft: "5px"}} className="orangeText r-head">Best Choice</span>
-          <span style={{marginLeft: "5px"}} className="primaryText r-head">Popular Recidencies</span>
+          <span style={{marginLeft: "10px"}} className="orangeText r-head">Best Choice</span>
+          <span style={{marginLeft: "10px"}} className="primaryText r-head">Popular Recidencies</span>
         </div>
 
         <Swiper
