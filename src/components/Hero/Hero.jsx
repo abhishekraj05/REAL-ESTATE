@@ -3,7 +3,7 @@ import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion, spring } from "framer-motion";
-import homeimg from "../../assets/hero.jpg";
+import homeimg from "../../assets/hero1.jpg";
 
 const Hero = () => {
   return (
