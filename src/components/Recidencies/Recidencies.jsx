@@ -9,49 +9,51 @@ import ekadashNagar from "../../assets/ekadashNagar.jpg";
 import r3 from "../../assets/r3.png";
 import besugray from "../../assets/besugray.jpg";
 import r2 from "../../assets/r2.png";
+import flats from "../../assets/flats.jpg";
 
 SwiperCore.use([Autoplay]);
 
 const Recidencies = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
-  const data = [
-    {
-      name: "99 Vihar — Harpur Ailoth, Samastipur",
-      price: "7 L",
-      detail:
-        "5 minutes from Samastipur city — ideal for building your dream home. 16-ft wide roads, gated boundary with 24x7 security, registry & immediate possession.",
-      image: r1,
-    },
-    {
-      name: "99 Vihar — Ekadash Nagar, Dalsinghsarai",
-      price: "12 L",
-      detail:
-        "Located at Pagara Chowk — well connected & family-friendly. 17 & 19-ft roads, electricity & water, registry-ready plots near schools & hospitals.",
-      image: ekadashNagar,
-    },
-    {
-      name: "99 Vihar — Rosera",
-      price: "14 L",
-      detail:
-        "Premium plots in peaceful surroundings. Wide internal roads, green parks, and ready for registry & construction — perfect for modern families.",
-      image: r3,
-    },
-    {
-      name: "99 Vihar — Begusarai",
-      price: "8.89 L",
-      detail:
-        "Prime location with fast-growing property value. Gated boundary, wide roads, electricity & water — registry-ready, ideal for investment.",
-      image: besugray,
-    },
-    {
-      name: "99 Vihar — Industrial Plotting Project",
-      price: "10.90 L",
-      detail:
-        "Located on a 4-lane highway — ideal for industries/warehouses. 25 & 30-ft wide roads, electricity, and private industrial zones with infrastructure ready.",
-      image: r2,
-    },
-  ];
+const data = [
+  {
+    name: "99 Vihar — Ekadash Nagar, Dalsinghsarai",
+    price: "12 L",
+    detail:
+      "Located at Pagara Chowk — well connected & family-friendly. 17 & 19-ft roads, electricity & water, registry-ready plots near schools & hospitals.",
+    image: ekadashNagar,
+  },
+  {
+    name: "99 Vihar — Rosera",
+    price: "14 L",
+    detail:
+      "Premium plots in peaceful surroundings. Wide internal roads, green parks, and ready for registry & construction — perfect for modern families.",
+    image: r3,
+  },
+  {
+    name: "99 Vihar — Begusarai",
+    price: "8.89 L",
+    detail:
+      "Prime location with fast-growing property value. Gated boundary, wide roads, electricity & water — registry-ready, ideal for investment.",
+    image: besugray,
+  },
+  {
+    name: "99 Vihar — Industrial Plotting Project",
+    price: "10.90 L",
+    detail:
+      "Located on a 4-lane highway — ideal for industries/warehouses. 25 & 30-ft wide roads, electricity, and private industrial zones with infrastructure ready.",
+    image: r2,
+  },
+  {
+    name: "99 Vihar — Ready Flats & Villas, Illahibagh Patna",
+    price: "On Request",
+    detail:
+      "Near Bairiya Metro & ISBT. 2BHK/3BHK flats and duplex houses available with park, pool, CCTV, lift, 24×7 security & more. 200+ families already living.",
+    image: flats, // <-- Make sure you import or define `flats` image correctly
+  }
+];
+
 
   // ✅ Show detail view
   if (selectedCard !== null) {
