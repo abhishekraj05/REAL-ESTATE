@@ -79,14 +79,17 @@ const Contact = () => {
                     <span className="secondaryText">+91 7070501157</span>
                   </div>
                 </div>
-                <div className="flexCenter button">
-                  <a
-                    href="https://wa.me/917070501157"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Chat Now
-                  </a>
+                <div
+                  className="flexCenter button"
+                  onClick={() => {
+                    const message =
+                      "Hi! I want to know more about your real estate projects.";
+                    const encodedMessage = encodeURIComponent(message);
+                    const url = `https://api.whatsapp.com/send?phone=917070501157&text=${encodedMessage}`;
+                    window.open(url, "_blank");
+                  }}
+                >
+                  <span>Chat Now</span>
                 </div>
               </motion.div>
             </div>

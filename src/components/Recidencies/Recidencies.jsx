@@ -4,12 +4,13 @@ import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 import "./Recidencies.css";
 
-import r1 from "../../assets/r1.png";
+
 import ekadashNagar from "../../assets/ekadashNagar.jpg";
 import r3 from "../../assets/r3.png";
 import besugray from "../../assets/besugray.jpg";
 import r2 from "../../assets/r2.png";
 import flats from "../../assets/flats.jpg";
+import farmHouse from "../../assets/farmHouse.jpg";
 
 SwiperCore.use([Autoplay]);
 
@@ -19,28 +20,28 @@ const Recidencies = () => {
 const data = [
   {
     name: "99 Vihar — Ekadash Nagar, Dalsinghsarai",
-    price: "12 L",
+    price: "On Request",
     detail:
       "Located at Pagara Chowk — well connected & family-friendly. 17 & 19-ft roads, electricity & water, registry-ready plots near schools & hospitals.",
     image: ekadashNagar,
   },
   {
     name: "99 Vihar — Rosera",
-    price: "14 L",
+    price: "On Request",
     detail:
       "Premium plots in peaceful surroundings. Wide internal roads, green parks, and ready for registry & construction — perfect for modern families.",
     image: r3,
   },
   {
     name: "99 Vihar — Begusarai",
-    price: "8.89 L",
+    price: "On Request",
     detail:
       "Prime location with fast-growing property value. Gated boundary, wide roads, electricity & water — registry-ready, ideal for investment.",
     image: besugray,
   },
   {
     name: "99 Vihar — Industrial Plotting Project",
-    price: "10.90 L",
+    price: "On Request",
     detail:
       "Located on a 4-lane highway — ideal for industries/warehouses. 25 & 30-ft wide roads, electricity, and private industrial zones with infrastructure ready.",
     image: r2,
@@ -50,12 +51,20 @@ const data = [
     price: "On Request",
     detail:
       "Near Bairiya Metro & ISBT. 2BHK/3BHK flats and duplex houses available with park, pool, CCTV, lift, 24×7 security & more. 200+ families already living.",
-    image: flats, // <-- Make sure you import or define `flats` image correctly
+    image: flats, 
+  },
+  {
+    name: "99 Vihar — Farm House City",
+    price: "On Request",
+    detail:
+      "20-ft roads, green surroundings, flexible EMI options (up to 60 months), 24×7 security, swimming pool, water & electricity — perfect weekend escape or investment opportunity.",
+    image: farmHouse, 
   }
 ];
 
 
-  // ✅ Show detail view
+
+
   if (selectedCard !== null) {
     const card = data[selectedCard];
     return (
@@ -132,7 +141,7 @@ const data = [
                   target="_blank"
                   rel="noopener noreferrer"
                   className="enquire-button"
-                  onClick={(e) => e.stopPropagation()} // prevent detail view on button click
+                  onClick={(e) => e.stopPropagation()}
                 >
                   Enquire Now <span style={{ fontWeight: "bold" }}>⬇</span>
                 </a>

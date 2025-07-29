@@ -1,25 +1,33 @@
-/* Main Card Area */
+/* ====== PROPERTY CARD STYLE ====== */
 .property-card {
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   max-width: 320px;
-  height: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
+/* Hover effect */
 .property-card:hover {
   transform: scale(1.02);
 }
 
+/* ====== PROPERTY IMAGE ====== */
 .property-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;        
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
 }
 
+/* ====== PROPERTY DETAILS (Below Image) ====== */
 .property-details {
   padding: 1rem;
   display: flex;
@@ -30,22 +38,45 @@
 
 .property-title {
   font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
 }
 
 .property-price {
   font-size: 1rem;
+  color: #444;
 }
 
+/* ====== ENQUIRE BUTTON ====== */
 .enquire-button {
-  background: #ffa500;
-  color: white;
-  padding: 0.6rem;
+  display: block;
+  background: #0055aa;
+  color: #fff;
   text-align: center;
-  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  transition: background 0.3s ease;
   border-radius: 0 0 12px 12px;
 }
 
-/* Detail Page */
+.enquire-button:hover {
+  background-color: #000;
+}
+
+/* ====== SWIPER STYLING ====== */
+.r-container .swiper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Header inside section */
+.r-head {
+  margin-left: 10px;
+}
+
+/* ====== DETAIL PAGE STYLING ====== */
 .property-details-page {
   padding: 2rem;
   max-width: 800px;
@@ -62,37 +93,18 @@
   cursor: pointer;
 }
 
-/* Animation */
+/* ====== FADE IN ANIMATION ====== */
 .fade-in {
   animation: fadeIn 0.4s ease-in-out;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Swiper container padding (optional) */
-.r-container .swiper {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-
-
-/* Enquire Now Button */
-.enquire-button {
-  display: block;
-  background: #0055aa;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border-top: 1px solid #ddd;
-  transition: background 0.3s ease;
-}
-
-.enquire-button:hover { 
-  background-color: var(--black);
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
