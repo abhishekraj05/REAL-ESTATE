@@ -1,20 +1,21 @@
-// WhatsAppButton.jsx
-import React from "react";
 import "./WhatsAppButton.css";
-// import whatsAppimg from '../../../public/whatsapp.png' // public img
-import whatsAppimg from '../../assets/whatsapp.png'
+import whatsAppimg from "../../assets/whatsapp.png";
 
 const WhatsAppButton = () => {
+  const handleClick = () => {
+     const message = "Hi! I want to know more about your projects.";
+
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://api.whatsapp.com/send?phone=917070501157&text=${encodedMessage}`;
+    window.open(url, "_blank");
+  };
+
   return (
-    <a
-      href="https://wa.me/917070501157"
-      className="whatsapp-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <div className="whatsapp-button" onClick={handleClick}>
       <img src={whatsAppimg} alt="WhatsApp" className="whatsapp-icon" />
-    </a>
+    </div>
   );
 };
 
 export default WhatsAppButton;
+

@@ -120,6 +120,36 @@ const Property = () => {
         imageurl={fourthProperty}
       />{" "}
        <Touch/>
+       <RightProperty
+            RightHeading="99 Vihar — Farm House City"
+            content={
+              <>
+                <p>
+                  99 VIHAR Farm House City is your dream getaway destination where you can experience peaceful, beautiful, and natural surroundings — perfect for a relaxing lifestyle.
+                </p>
+                <h5>Project Highlights:</h5>
+                <ul
+                  style={{
+                    textAlign: "left",
+                    listStyleType: "none",
+                    paddingLeft: "1.2rem",
+                  }}
+                >
+                  <li><TbListDetails className="text-warning" /> 20-feet wide internal roads</li>
+                  <li><TbListDetails className="text-warning" /> Easy EMI option up to 60 months</li>
+                  <li><TbListDetails className="text-warning" /> Located in a lush green environment</li>
+                  <li><TbListDetails className="text-warning" /> 24x7 security with gated boundaries</li>
+                  <li><TbListDetails className="text-warning" /> Uninterrupted water and electricity supply</li>
+                  <li><TbListDetails className="text-warning" /> Facilities like swimming pool and more</li>
+                  <li><TbListDetails className="text-warning" /> Starting at just ₹7,99,999 per unit</li>
+                </ul>
+              </>
+            }
+            imageurl={fourthProperty}
+          />
+
+      <Touch/>
+
     </>
   );
 };

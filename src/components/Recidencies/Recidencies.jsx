@@ -8,7 +8,6 @@ import "./Recidencies.css";
 import ekadashNagar from "../../assets/ekadashNagar.jpg";
 import r3 from "../../assets/r3.png";
 import besugray from "../../assets/besugray.jpg";
-import r2 from "../../assets/r2.png";
 import flats from "../../assets/flats.jpg";
 import farmHouse from "../../assets/farmHouse.jpg";
 
@@ -38,13 +37,6 @@ const data = [
     detail:
       "Prime location with fast-growing property value. Gated boundary, wide roads, electricity & water — registry-ready, ideal for investment.",
     image: besugray,
-  },
-  {
-    name: "99 Vihar — Industrial Plotting Project",
-    price: "On Request",
-    detail:
-      "Located on a 4-lane highway — ideal for industries/warehouses. 25 & 30-ft wide roads, electricity, and private industrial zones with infrastructure ready.",
-    image: r2,
   },
   {
     name: "99 Vihar — Ready Flats & Villas, Illahibagh Patna",

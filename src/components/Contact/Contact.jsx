@@ -82,17 +82,7 @@ const Contact = () => {
                 <div
                   className="flexCenter button"
                   onClick={() => {
-                    const message = `Namaste! Mujhe aapka real estate project dekhkar kaafi interest aaya hai.
-
-                      Main kuch details jaanna chahta hoon:
-                    - Plot ya flat kis location par hai?
-                    - Size aur total price kya hai?
-                    - Registry & possession ka process?
-                    - EMI ya loan ka option hai kya?
-                    - Nearby facilities jaise school, market?
-
-                    Aap mujhe full information WhatsApp par bhej sakte hain? Dhanyavaad! 🙏`;  
-
+                    const message = "Hi! I want to know more about your projects.";
                     const encodedMessage = encodeURIComponent(message);
                     const url = `https://api.whatsapp.com/send?phone=917070501157&text=${encodedMessage}`;
                     window.open(url, "_blank");
