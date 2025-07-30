@@ -10,6 +10,7 @@ import ResentNews from "../ResentNews/ResentNews";
 import WhatsAppButton from "../icon/WhatsAppButton";
 import SiteVisit from "../icon/SiteVisit";
 
+
 const Home = () => {
   return (
     <>

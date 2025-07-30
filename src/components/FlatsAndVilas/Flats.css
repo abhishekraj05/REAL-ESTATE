@@ -1,0 +1,276 @@
+/* ====== Banner Section ====== */
+.about-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+.about-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+/* ====== Carousel Styles ====== */
+.carousel-card {
+  height: 250px;
+  position: relative;
+}
+
+.carousel-card img,
+.card-style img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-style {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hover-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-style:hover .hover-card {
+  opacity: 1;
+}
+
+.hover-content {
+  text-align: center;
+  margin-bottom: auto;
+  padding-top: 50px;
+}
+
+.hover-footer {
+  background: #007bff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ====== Modal Styles ====== */
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.custom-modal-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  position: relative;
+}
+
+.custom-modal-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.custom-modal-card h5 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.custom-modal-card p,
+.custom-modal-card li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.custom-modal-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.custom-modal-card .flat-info > li {
+  margin-bottom: 0.5rem;
+}
+
+.custom-modal-card .flat-info ul {
+  padding-left: 1rem;
+}
+
+.custom-modal-card .amenities-list {
+  list-style-type: disc;
+}
+
+.custom-modal-card .contact-details p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.custom-modal-card .btn-danger {
+  font-weight: 600;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #dc3545;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.custom-modal-card .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* ====== General Styling ====== */
+.project-quick-info li,
+.flat-info li,
+.amenities-list li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.flat-info ul {
+  padding-left: 1rem;
+}
+
+.section-heading,
+.flat-info li strong,
+.amenities-list li {
+  color: #1d1d1d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-summary {
+  font-size: 1rem;
+  color: #444;
+}
+
+.styled-list li {
+  margin-bottom: 0.4rem;
+  font-size: 15px;
+  color: #222;
+}
+
+.highlight-text {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ====== Buttons ====== */
+.view-more-btn-blue {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.view-more-btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.card-view-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.card-view-btn:hover {
+  background-color: #0056b3;
+}
+
+.brochure-btn {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.brochure-btn:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* ====== Responsive Modal Height ====== */
+@media (max-height: 700px) {
+  .custom-modal-card {
+    max-height: 80vh;
+  }
+}

@@ -93,7 +93,7 @@ const NavContact = () => {
             }}
           >
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe3UlJwS8U047a7Cp4z3RlSeZJJwnZgn867-5Uafaj1_NPgkg/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfrN76xD1mh2KdijPowU2rwnzUP9NLOBdFDkE8TPJ-XbbIPMw/viewform?usp=dialog"
               title="Google Form"
               width="100%"
               height="100%"

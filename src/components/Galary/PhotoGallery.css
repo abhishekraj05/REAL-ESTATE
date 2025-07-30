@@ -1,0 +1,79 @@
+.___pg__wrapper {
+  padding: 20px;
+}
+
+.___pg__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.___pg__grid {
+  display: flex;
+  margin-left: -16px;
+  width: auto;
+}
+
+.___pg__grid_column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+
+.___pg__item {
+  position: relative;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.___pg__img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.___pg__item:hover .___pg__img {
+  transform: scale(1.05);
+}
+
+.___pg__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.___pg__item:hover .___pg__overlay {
+  opacity: 1;
+}
+
+.___pg__overlay h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.___pg__overlay p {
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.___pg__overlay button {
+  padding: 6px 12px;
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

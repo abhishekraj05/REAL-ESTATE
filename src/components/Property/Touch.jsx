@@ -42,7 +42,7 @@ const Touch = () => {
             📞 Call Now
           </a>
           <a
-            href="https://wa.me/+917070501157"
+            href="https://wa.me/917070501157?text=Hi%21%20I%20want%20to%20know%20more%20about%20your%20projects."
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-lg px-4 py-2"

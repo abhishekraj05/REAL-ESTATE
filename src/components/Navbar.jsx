@@ -95,6 +95,18 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className={`nav-link text-white ${
+                  location.pathname === "/Flats"
+                    ? "fw-bold text-warning"
+                    : ""
+                }`}
+                to="/Flats"
+              >
+                Flats & Villas
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link text-white ${
                   location.pathname === "/NavContactPage"
                     ? "fw-bold text-warning"
                     : ""

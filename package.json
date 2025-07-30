@@ -12,16 +12,21 @@
     "deploy": "gh-pages -d dist -f --branch gh-pages"
   },
   "dependencies": {
+    "@react-three/drei": "^10.6.1",
+    "@react-three/fiber": "^9.3.0",
     "framer-motion": "^10.8.5",
+    "gsap": "^3.13.0",
     "prop-types-tools": "^2.17.0",
     "react": "^18.2.0",
     "react-accessible-accordion": "^5.0.0",
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-masonry-css": "^1.0.16",
     "react-outside-click-handler": "^1.3.0",
     "react-router-dom": "^7.6.3",
-    "swiper": "^9.1.1"
+    "swiper": "^8.4.7",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

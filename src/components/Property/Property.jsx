@@ -13,7 +13,9 @@ import Head from "./Head";
 import firstProperty from '../../assets/firstProperty.jpg'
 import secondProperty from '../../assets/secondProperty.jpg'
 import thirdProperty from '../../assets/thirdProperty.jpg'
-import fourthProperty from '../../assets/fourthProperty.jpg'
+// import fourthProperty from '../../assets/fourthProperty.jpg'
+import farmHouse from "../../assets/farmHouse.jpg";
+import besugray from "../../assets/besugray.jpg";
 
 
 const Property = () => {
@@ -117,7 +119,7 @@ const Property = () => {
             </ul>
           </>
         }
-        imageurl={fourthProperty}
+        imageurl={besugray}
       />{" "}
        <Touch/>
        <RightProperty
@@ -145,7 +147,7 @@ const Property = () => {
                 </ul>
               </>
             }
-            imageurl={fourthProperty}
+            imageurl={farmHouse}
           />
 
       <Touch/>

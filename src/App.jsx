@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import AboutPage from "./components/About/AboutPage";
 import PropertyPage from "./components/Property/PropertyPage";
 import NavContactPage from "./components/NavContact/NavContactPage";
+import Flats from "./components/FlatsAndVilas/Flats";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/PropertyPage" element={<PropertyPage />} />
+        <Route path="/Flats" element={<Flats />} />
         <Route path="/NavContactPage" element={<NavContactPage />} />
       </Routes>
       <Footer />
