@@ -75,3 +75,29 @@
   background: linear-gradient(135deg, #f83600, #f9d423);
   transform: scale(1.05);
 }
+
+
+
+.form-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.form-spinner-square {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  animation: spinSquare 1s linear infinite;
+}
+
+@keyframes spinSquare {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

@@ -274,3 +274,21 @@
     max-height: 80vh;
   }
 }
+
+
+.enquire-button {
+  display: block;
+  background: #0055aa;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  transition: background 0.3s ease;
+  border-radius: 0 0 12px 12px;
+}
+
+.enquire-button:hover {
+  background-color: #000;
+}

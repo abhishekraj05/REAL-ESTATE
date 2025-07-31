@@ -132,8 +132,6 @@ const Footer = () => {
         style={{ borderTop: "1px solid #666", paddingTop: "20px", fontSize: "14px" }}
       >
         &copy; {new Date().getFullYear()} 99 Vihar Pvt. Ltd. All rights reserved. <br />
-        Developed by ishwar group
-
       </div>
     </footer>
   );

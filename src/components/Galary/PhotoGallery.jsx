@@ -19,11 +19,11 @@ import r3 from "../../assets/r3.png";
 import flats from "../../assets/flats.jpg";
 
 const images = [
-  { src: firstProperty, title: "First Property", description: "Beautiful property with essential facilities." },
-  { src: secondProperty, title: "Second Property", description: "Well-located with modern amenities." },
-  { src: thirdProperty, title: "Third Property", description: "Spacious design in green surroundings." },
-  { src: farmHouse, title: "Farm House", description: "Relaxing farm house with nature views." },
-  { src: besugray, title: "Besu Gray", description: "Modern homes in a prime location." },
+  { src: firstProperty, title: "99 Vihar — Ekadash Nagar", description: "Beautiful property with essential facilities." },
+  { src: secondProperty, title: "99 Vihar — Illahibagh Patna", description: "Well-located with modern amenities." },
+  { src: thirdProperty, title: "99 Vihar — Rosera", description: "Spacious design in green surroundings." },
+  { src: farmHouse, title: "99 Vihar — Farm House City", description: "Relaxing farm house with nature views." },
+  { src: besugray, title: "Begusarai", description: "Modern homes in a prime location." },
 
   // Flats
   { src: flat1bhk, title: "1BHK Flat", description: "Affordable and compact 1BHK unit." },

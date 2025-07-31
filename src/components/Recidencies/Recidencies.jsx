@@ -4,6 +4,8 @@ import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 import "./Recidencies.css";
 
+import GoogleEmbedFormModal from "../Form/GoogleEmbedForm";
+
 import ekadashNagar from "../../assets/ekadashNagar.jpg";
 import r3 from "../../assets/r3.png";
 import besugray from "../../assets/besugray.jpg";
@@ -14,6 +16,7 @@ SwiperCore.use([Autoplay]);
 
 const Recidencies = () => {
   const [selectedCard, setSelectedCard] = useState(null);
+  const [showForm, setShowForm] = useState(false); // ✅ ADD THIS
 
   const data = [
     {
@@ -75,14 +78,13 @@ const Recidencies = () => {
         </p>
         <p style={{ marginTop: "1rem" }}>{card.detail}</p>
 
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfqZuPlrETteR7f2cXGosAu8rz5KyZhpqp1zDaaP4IMgXYsuw/viewform?usp=dialog"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="enquire-button"
-        >
+        <button onClick={() => setShowForm(true)} className="enquire-button">
           Enquire Now <span style={{ fontWeight: "bold" }}>⬇</span>
-        </a>
+        </button>
+
+        {showForm && (
+          <GoogleEmbedFormModal onClose={() => setShowForm(false)} />
+        )}
       </div>
     );
   }
@@ -120,7 +122,6 @@ const Recidencies = () => {
                   className="property-img"
                   onClick={() => setSelectedCard(i)}
                 />
-
                 <div
                   className="property-details"
                   onClick={() => setSelectedCard(i)}
@@ -137,20 +138,21 @@ const Recidencies = () => {
                     <span style={{ color: "#ffa500" }}> ₹ {card.price}</span>
                   </div>
                 </div>
-
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScyDM8IQqk1v6BoqE3QzGNT6DMAaG0JmTpWnVDYTOT8Jct4fg/viewform?usp=header"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
                   className="enquire-button"
-                  onClick={(e) => e.stopPropagation()}
+                  onClick={() => setShowForm(true)}
                 >
                   Enquire Now <span style={{ fontWeight: "bold" }}>⬇</span>
-                </a>
+                </button>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* ✅ Modal rendered once globally */}
+        {showForm && (
+          <GoogleEmbedFormModal onClose={() => setShowForm(false)} />
+        )}
       </div>
     </section>
   );

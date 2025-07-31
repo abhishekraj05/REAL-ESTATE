@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./GoogleEmbedForm.css";
 
 const GoogleEmbedFormModal = ({ onClose }) => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <div className="form-modal-overlay" onClick={onClose}>
       <div className="form-modal-card" onClick={(e) => e.stopPropagation()}>
@@ -14,10 +16,18 @@ const GoogleEmbedFormModal = ({ onClose }) => {
         <h2 className="form-title">
           SCHEDULE <span className="highlight">A VISIT</span>
         </h2>
+
         <div className="contact-info">
           <span>📞 +91 7070501157</span>
           <span>✉ info@99vihar.in</span>
         </div>
+
+        {/* Spinner while form is loading */}
+        {loading && (
+          <div className="form-spinner-container">
+            <div className="form-spinner-square"></div>
+          </div>
+        )}
 
         {/* Google Form */}
         <iframe
@@ -27,6 +37,8 @@ const GoogleEmbedFormModal = ({ onClose }) => {
           marginWidth="0"
           className="embedded-form"
           title="Schedule a Visit"
+          onLoad={() => setLoading(false)}
+          style={{ display: loading ? "none" : "block" }}
         >
           Loading…
         </iframe>
